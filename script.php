@@ -20,16 +20,6 @@
 
 			$data_to_save = $old_records;
 		}
-		$servername = "localhost";
-		$username = "admin";
-$password = "admin";
-$dbname = "elab";
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-  }
-  $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-  VALUES ('John', 'Doe', 'john@example.com')";
 		if(!file_put_contents("messages.json", 
 		json_encode($data_to_save, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE), LOCK_EX)){
 			

@@ -21,7 +21,7 @@
 		<input type="text" name="name" value="Ime Prezime">
 
 		<label>Unesi broj indeksa</label>
-		<input type="text" name="nindex" value="xxxx/xxxx">
+		<input type="text" name="index" value="xxxx/xxxx">
 
 		<input type="submit" name="submit" value="Prijavi se">
 
